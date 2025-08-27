@@ -1,10 +1,70 @@
-.img-foto-perfil{
-    width: 15%;
-    heigt:200px;
-    border-radius: 50%;
-    float:right;
-    margin-left:50px;
-    margin-right:50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    background:linear-gradient(#1a1e29,#01c38e);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vh;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#description{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    background:linear-gradient(150deg, #132d46 40%, #1a1e29);
+    color:#FFFFFF;
+}
+
+h2{
+    color:#FFFFFF;
+    text-shadow:3px 3px 3px #1a1e29;
+    font-size: 2vw;
+}
+
+h1{
+    color: #FFFFFF;
+    font-size: 5vw;
+    text-shadow:5px 5px 5px #1a1e29;
+    margin-bottom: 15px;
+}
+
+#mi-description{
+    display: flex;
+    align-items: center;   /* Centra verticalmente */
+    justify-content: space-between; /* Espacia texto e imagen */
+    padding: 20px;
+}
+
+p{
+    margin:20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#programador{
+    width: 100%;  /* La imagen se adapta al div */
+    height: auto
+}
 
