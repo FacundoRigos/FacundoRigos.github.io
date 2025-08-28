@@ -62,8 +62,39 @@ p{
     flex-direction: column;
 }
 
-#programador{
+.programador{
     width: 100%;  /* La imagen se adapta al div */
     height: auto
 }
 
+@media (max-width: 767.98px) {
+    #description{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #home{
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        
+    }
+}
+
+@media (max-width: 575.98px) {
+    #description{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #home{
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        
+    }
+}
