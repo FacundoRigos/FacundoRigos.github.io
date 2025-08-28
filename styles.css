@@ -24,7 +24,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    color:#fff;
 }
 
 #description{
@@ -32,17 +32,17 @@ body{
     height: 100vh;
     margin:0;
     background:linear-gradient(150deg, #132d46 40%, #1a1e29);
-    color:#FFFFFF;
+    color:#fff;
 }
 
-h2{
-    color:#FFFFFF;
+.h2{
+    color:#fff; 
     text-shadow:3px 3px 3px #1a1e29;
     font-size: 2vw;
 }
 
-h1{
-    color: #FFFFFF;
+.h1{
+    color: #fff; 
     font-size: 5vw;
     text-shadow:5px 5px 5px #1a1e29;
     margin-bottom: 15px;
@@ -58,7 +58,6 @@ h1{
 p{
     margin:20px;
     padding: 10px;
-
     display: flex;
     flex-direction: column;
 }
