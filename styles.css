@@ -38,12 +38,12 @@ body{
 .h2{
     color:#fff; 
     text-shadow:3px 3px 3px #1a1e29;
-    font-size: 2vw;
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 
 .h1{
     color: #fff; 
-    font-size: 5vw;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     text-shadow:5px 5px 5px #1a1e29;
     margin-bottom: 15px;
 }
@@ -53,6 +53,8 @@ body{
     align-items: center;   /* Centra verticalmente */
     justify-content: space-between; /* Espacia texto e imagen */
     padding: 20px;
+    gap:20px;
+    flex-wrap: wrap;
 }
 
 p{
@@ -63,11 +65,22 @@ p{
 }
 
 .programador{
-    width: 100%;  /* La imagen se adapta al div */
-    height: auto
+    
+    .programador {
+    flex: 1 1 250px; /* ✅ mínimo 250px */
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+}
+
+#mi-description > div {
+    flex: 1 1 300px; /* ✅ mínimo 300px, pero crece si hay espacio */
+    max-width: 600px;
 }
 
 @media (max-width: 767.98px) {
+    
     #description{
         width: 100%;
         height: auto;
@@ -81,9 +94,32 @@ p{
         text-align: center;
         
     }
+
+    #mi-description{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mi-description > div{
+        max-width: 100%;
+    }
+
+    .programador{
+        max-width: 70%;
+    }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 479.99px) {
+    body{
+        padding:10px;
+    }
+
+    h1{
+        font-size: clamp(1.2rem, 6vw, 2rem);
+    }
+    h2{
+        font-size: clamp(1rem, 5vw, 1.5rem)
+    }
     #description{
         width: 100%;
         height: auto;
@@ -97,4 +133,21 @@ p{
         text-align: center;
         
     }
+
+    #mi-description{
+        gap:10px;
+        font-size:smaller;
+    }
+
+    .programador{
+        max-width: 90%;
+    }
+
+    #home, #description{
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    
+    }
+
 }
